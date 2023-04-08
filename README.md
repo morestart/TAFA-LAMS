@@ -20,9 +20,8 @@ You need prepare a mzML format data
 
 ### 2.Rewrite TAFA-LAMS/config.py
 
-This file contents the config of TAFA-LAMS, you need rewrite the config file according to your data.
-You can build your config file according to the following template:
-
+This file contains the configuration of TAFA-LAMS. You need to rewrite the config file according to your data.
+You can build your config file using the following template:
 ```python
 params = [
     {
