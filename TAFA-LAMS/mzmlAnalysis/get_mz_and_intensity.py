@@ -2,7 +2,7 @@ import numpy as np
 from pyteomics import mzml
 from pyteomics.mzml import MzML
 from rich.progress import track
-
+from loguru import logger
 
 class MZMLAnalysis:
 
@@ -63,7 +63,10 @@ class MZMLAnalysis:
             raise ValueError(
                 f'start time must < end time, your tims is: {starttime}-{endtime}'
             )
+
         time_interval = self.cut_time(starttime, endtime)
+        if time_interval[-1] > len(time_interval):
+            logger.error(f'时间段超出数据范围, 请重新输入时间段, 数据范围为: {self.process_time[0]}-{self.process_time[-1]}')
         need_intensity = self.intensity[time_interval[0]: time_interval[-1]]
         need_mz = self.mz[time_interval[0]: time_interval[-1]]
         return need_intensity, need_mz
