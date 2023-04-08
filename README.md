@@ -1,4 +1,4 @@
-<img src="assets/BMI.jpg" alt="BMI.jpg" style="zoom:70%;" />
+<img src="assets/BMI.jpg" alt="BMI.jpg" style="zoom:10%;" />
 
 
 # <p align="center">TAFA-LAMS</p>
