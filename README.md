@@ -12,7 +12,7 @@ To install TAFA-LAMS, you can use the following command:
 pip install -r requirements.txt
 ```
 
-## Uasge
+## Usage
 
 ### 1. Data prepare
 
