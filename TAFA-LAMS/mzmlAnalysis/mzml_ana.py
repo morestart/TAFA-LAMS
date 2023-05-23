@@ -46,9 +46,9 @@ def get_one_file_result(params):
                                    tags=param.get('tags'), element_names=param.get('elementNames'),
                                    ratio=param.get('ratios'))
             data_df = ca.get_total_weights()
-            all_df[f'{bg_start_time}-{bg_end_time}-{need_start_time}-{need_start_time} mz-intensity'] = df
+            all_df[f'{bg_start_time}-{bg_end_time}-{need_start_time}-{need_end_time} mz-intensity'] = df
             all_df[
-                f'{bg_start_time}-{bg_end_time}-{need_start_time}-{need_start_time} weightPercent'] = data_df
+                f'{bg_start_time}-{bg_end_time}-{need_start_time}-{need_end_time} weightPercent'] = data_df
 
         write_file.to_excel(all_df, param.get('savePath'), param.get('saveName'))
         all_df.clear()
