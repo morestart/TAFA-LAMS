@@ -63,7 +63,7 @@ If you use TAFA-LAMS in your research, please cite the following paper:
 
 ``` 
 @article{
-    title={An Efficient High-throughput Screening Method for Fatty Acid Producing Strains Using in Situ LAESI-MS with A TAFA-LEMS Python Package}, 
+    title={A high-throughput platform enables in situ screening of fatty acid-producing strains using laser ablation electrospray ionization mass spectrometry and a Python package}, 
     author={Huan Liu, Tianlun Cui, Wei Gao, Sen Wang, Xiaojin Song, Zhuojun Wang, Huidan Zhang, Shiming Li, Qiu Cui1},
     journal={Analytica Chimica Acta},
     year={2023}
